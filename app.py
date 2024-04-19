@@ -127,7 +127,7 @@ def page_shared_key():
 
         if st.button('Generate Shared Key', key='generate_shared_key'):
 
-            start_time = time.time()  # Start the timer
+            start_time = time.time()
 
             alice_code, bob_code = "", ""
             while len(alice_code) <= desired_key_length:
@@ -148,8 +148,8 @@ def page_shared_key():
             alice_code = alice_code[:desired_key_length]
             bob_code = bob_code[:desired_key_length]
 
-            end_time = time.time()  # Stop the timer
-            time_taken = end_time - start_time  # Calculate the time taken
+            end_time = time.time()
+            time_taken = end_time - start_time
 
             col1, col2 = st.columns(2)
             with col1:
@@ -159,7 +159,7 @@ def page_shared_key():
                 st.subheader('Bob Code')
                 st.write(bob_code)
 
-            st.write(f"Time taken to generate the key: {int(time_taken)} seconds")  # Display the time taken
+            st.write(f"Time taken to generate the key: {int(time_taken)} seconds")
 PAGES = {
     "Bell States": page_bell_states,
     "Entangled Bell States": page_entangled_states,
