@@ -5,3 +5,4 @@ pillow~=10.3.0
 pytest~=8.1.1
 fastapi~=0.110.2
 uvicorn~=0.29.0
+matplotlib
